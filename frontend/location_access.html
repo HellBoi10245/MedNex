@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Location Access</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+  <link rel="stylesheet" href="location_access.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>Get Your Location</h2>
+    <p>Select how you want to share your location:</p>
+
+    <div class="buttons">
+      <button id="useCurrent">📍 Use Current Location</button>
+      <button id="enterManually">✏️ Enter Pincode Manually</button>
+    </div>
+
+    <div id="map" class="map"></div>
+
+    <div id="manualBox" class="manual hidden">
+      <input type="text" id="pincode" placeholder="Enter 6-digit pincode" maxlength="6" />
+      <button id="submitPincode">Submit</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="location_access.js"></script>
+</body>
+</html>
